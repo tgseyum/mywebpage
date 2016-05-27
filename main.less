@@ -1,13 +1,48 @@
-@border: 2px;
-@fontcolor: #ADD8E6;
+// variables 
+@border: 3px solid;
 @textalign : center;
-
+@bcolor : #ABBCCC;
+@lightgreen : #dfd;
+@fontcolor: #800000;
+@lightblue: #B7EEF4;
+@radius : 20px;
 
 h1 {
 	color: @fontcolor;
 	border: @border;
-	alignment: @textalign;
+	text-align: @textalign;
 }
 p {
 	color: @fontcolor;
+}
+
+body {
+	background-color: @bcolor;
+}
+.continer{
+	display:block;
+	width:100%;
+	height:200px;
+	background:@lightgreen;
+	margin: auto;
+	position:relative;
+	border:@border ;
+	border-radius:@radius;
+} 
+
+.sub-container
+{
+	width:1000px;
+	height:500px;
+	background:@lightblue;
+	margin:auto;
+	border-radius:@radius;
+}
+.shape{
+	width:1000px;
+	height:200px;
+    -webkit-border-radius:9999px;
+       -moz-border-radius:9999px;
+            border-radius:9999px;
+
 }
